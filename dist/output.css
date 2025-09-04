@@ -563,9 +563,59 @@
       color: var(--color-green-500);
     }
   }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
   .md\:text-red-500 {
     @media (width >= 48rem) {
       color: var(--color-red-500);
+    }
+  }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:px-0 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:px-2 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:px-5 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:text-green-500 {
+    @media (width >= 64rem) {
+      color: var(--color-green-500);
+    }
+  }
+  .xl\:w-full {
+    @media (width >= 80rem) {
+      width: 100%;
+    }
+  }
+  .\32 xl\:w-full {
+    @media (width >= 96rem) {
+      width: 100%;
     }
   }
 }
