@@ -4,6 +4,7 @@
   "description": "",
   "main": "./src/server.ts",
   "scripts": {
+    "start": "nodemon -e ts,json,mustache src/server.ts",
     "tail": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
