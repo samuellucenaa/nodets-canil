@@ -1,115 +1,20 @@
 {{>partials/header}}
         <main>
             <div>
-                <div class="bg-[url('/images/allanimals.jpg')] bg-cover bg-center w-auto h-60 flex justify-center
+
+                <div class="bg-[url('/images/{{banner.background}}.jpg')] bg-cover bg-center w-auto h-60 flex justify-center
                 items-center">
-                    <h2 class="text-white text-3xl font-bold text-shadow-lg/50 h-auto">Todos os animais</h2>
+                    <h2 class="text-white text-3xl font-bold text-shadow-lg/50 h-auto">{{banner.title}}</h2>
                 </div>
 
                 <div>
-                    <h2 class="text-center my-6 text-blue-900 text-[18px] font-bold">Todos os animais disponíveis para adoção</h2>
+                    <h2 class="text-center my-6 text-blue-900 text-[18px] font-bold">{{banner.title}} disponiveis para adocao</h2>
                     <div class="grid grid-cols-2 m-auto lg:grid-cols-4">
                         <div class="px-2">
                             <img class="rounded" src="/images/pastor-alemao.jpg" alt="Imagem de um pastor alemao">
                             <h3 class="font-bold mt-2">Labrador-retriever</h3>
                             <p class="text-[15px]">Cor: Branco</p>
                             <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2">
-                            <img class="rounded" src="/images/labrador.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4 lg:mt-0">
-                            <img class="rounded" src="/images/zwergspitz.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4 lg:mt-0">
-                            <img class="rounded" src="/images/husky.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/golden.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/poodle.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/bulldog.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/persa.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/mainecoon.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/bengal.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/siames.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/sphynx.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/neon.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/matogrosso.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/limpavidro.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/tanictis.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Cor: Branco</p>
-                        </div>
-                        <div class="px-2 mt-4">
-                            <img class="rounded" src="/images/acara.jpg" alt="Imagem de um pastor alemao">
-                            <h3 class="font-bold mt-2">Labrador-retriever</h3>
-                            <p class="text-[15px]">Cor: Branco</p>
-                            <p class="text-[15px]">Sexo: Masculino</p>
                         </div>
                     </div>
                 </div>
