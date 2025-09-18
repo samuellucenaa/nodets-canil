@@ -11,14 +11,14 @@
         <header class="flex flex-col items-center">
             <a class="text-3xl font-semibold text-blue-900 my-2" href="/">PetDevShop</a>
             <form method="get" action="/search">
-                <input class="border-gray-400 border-1 mb-2 p-2" type="search" name="" id="" placeholder="Pesquise por raça">
+                <input class="border-gray-400 border-1 mb-2 p-2" type="search" name="name" id="" value="{{query}}" placeholder="Pesquise por raça">
             </form>
             <nav class="bg-blue-900 w-full h-12 flex items-center justify-around">
                 <ul class="flex gap-10 items-center text-white">
-                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl"><a href="/">Todos</a></li>
-                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl"><a href="/cachorros">Cachorros</a></li>
-                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl"><a href="/gatos">Gatos</a></li>
-                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl"><a href="/peixes">Peixes</a></li>
+                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl {{#menu.all}}active:bg-blue-950{{/menu.all}}"><a href="/">Todos</a></li>
+                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl {{#menu.dog}}active:bg-blue-950{{/menu.dog}}"><a href="/cachorros">Cachorros</a></li>
+                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl {{#menu.cat}}active:bg-red-600{{/menu.cat}}"><a href="/gatos">Gatos</a></li>
+                    <li class="hover:bg-blue-950 px-1 hover:rounded-2xl {{#menu.fish}}{{/menu.fish}}"><a href="/peixes">Peixes</a></li>
                 </ul>
             </nav>
         </header>

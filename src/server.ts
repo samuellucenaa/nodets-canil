@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, '../public')))
 app.use(mainRouter)
 
 app.use((req,res)=>{
-    res.send('pag not found')
+    res.render('pages/404')
 })
 
 app.listen(process.env.PORT)

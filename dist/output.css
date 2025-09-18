@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -197,9 +198,6 @@
   .grid {
     display: grid;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -208,9 +206,6 @@
   }
   .h-auto {
     height: auto;
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-auto {
     width: auto;
@@ -249,8 +244,8 @@
   .bg-blue-900 {
     background-color: var(--color-blue-900);
   }
-  .bg-\[url\(\'\/images\/allanimals\.jpg\'\)\] {
-    background-image: url('/images/allanimals.jpg');
+  .bg-\[url\(\'\/images\/\{\{banner\.background\}\}\.jpg\'\)\] {
+    background-image: url('/images/{{banner.background}}.jpg');
   }
   .bg-\[url\(\.\.\/public\/images\/allanimals\.jpg\)\] {
     background-image: url(../public/images/allanimals.jpg);
@@ -316,6 +311,16 @@
       @media (hover: hover) {
         background-color: var(--color-blue-950);
       }
+    }
+  }
+  .active\:bg-blue-950 {
+    &:active {
+      background-color: var(--color-blue-950);
+    }
+  }
+  .active\:bg-red-600 {
+    &:active {
+      background-color: var(--color-red-600);
     }
   }
   .lg\:mt-0 {
